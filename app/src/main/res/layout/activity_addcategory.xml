@@ -25,14 +25,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/categoryName"
         android:layout_width="330dp"
         android:layout_height="51dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="enter category name"
+
         android:inputType="text"
-        android:text="Name"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />

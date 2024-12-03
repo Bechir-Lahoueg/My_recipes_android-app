@@ -24,6 +24,11 @@
         <activity
             android:name=".breakfast"
             android:exported="false" />
+        <activity android:name=".addcategory"
+            android:exported="true" />
+        <activity android:name=".categories"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
