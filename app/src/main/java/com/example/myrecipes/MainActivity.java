@@ -24,22 +24,14 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
     Button breakfast = findViewById(R.id.breakfast);
-    Button lunch = findViewById(R.id.lunch);
-    Button dinner = findViewById(R.id.dinner);
+
 
     breakfast.setOnClickListener(v -> {
         Intent intent = new Intent(MainActivity.this, breakfast.class);
         startActivity(intent);
     });
 
-    lunch.setOnClickListener(v -> {
-        Intent intent = new Intent(MainActivity.this, lunch.class);
-        startActivity(intent);
-    });
-    dinner.setOnClickListener(v -> {
-        Intent intent = new Intent(MainActivity.this, dinner.class);
-        startActivity(intent);
-    });
+
 
 
     }
