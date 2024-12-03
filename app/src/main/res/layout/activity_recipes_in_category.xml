@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipesInCategory"
     android:background="@color/orange"
-    >
+    tools:context=".RecipesInCategory">
 
+  <!-- Recipes List Title -->
   <TextView
       android:id="@+id/textView4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="124dp"
-      android:layout_marginTop="68dp"
+      android:layout_marginStart="112dp"
+      android:layout_marginTop="52dp"
       android:fontFamily="casual"
       android:text="Recipes List"
       android:textAlignment="center"
@@ -21,12 +21,37 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
+  <!-- Recipes Container: Where recipe items will be dynamically added -->
+
   <LinearLayout
       android:id="@+id/recipesContainer"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       android:orientation="vertical"
       android:padding="16dp"
-      android:scrollbars="vertical"/>
+      android:scrollbars="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textView4"
+      app:layout_constraintVertical_bias="0.122">
+
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/addRecipe"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="218dp"
+
+      android:layout_marginEnd="64dp"
+      android:layout_marginBottom="60dp"
+      android:backgroundTint="#7C6060"
+      android:text="add recipe"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

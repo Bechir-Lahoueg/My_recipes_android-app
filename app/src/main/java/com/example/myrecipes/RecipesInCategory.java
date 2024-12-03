@@ -1,7 +1,9 @@
 package com.example.myrecipes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,12 +19,19 @@ public class RecipesInCategory extends AppCompatActivity {
     private LinearLayout recipesContainer; // Container to hold the dynamically added recipe names
     private FirebaseFirestore db;
     private String categoryId;
+    private Button addRecipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_recipes_in_category);
+
+        addRecipe = findViewById(R.id.addRecipe);
+        addRecipe.setOnClickListener(v -> {
+            Intent intent = new Intent(RecipesInCategory.this, addRecipes.class);
+            startActivity(intent);
+        });
 
         // Initialize Firebase Firestore
         db = FirebaseFirestore.getInstance();
