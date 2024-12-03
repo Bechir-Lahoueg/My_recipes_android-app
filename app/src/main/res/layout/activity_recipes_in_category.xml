@@ -1,0 +1,32 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesInCategory"
+    android:background="@color/orange"
+    >
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="124dp"
+      android:layout_marginTop="68dp"
+      android:fontFamily="casual"
+      android:text="Recipes List"
+      android:textAlignment="center"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:id="@+id/recipesContainer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="16dp"
+      android:scrollbars="vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
