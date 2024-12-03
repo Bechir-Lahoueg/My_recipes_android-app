@@ -33,6 +33,8 @@ public class categories extends AppCompatActivity {
         addCategory = findViewById(R.id.addCategory);
         categoryContainer = findViewById(R.id.categoryContainer);
 
+
+
         // Add category button click listener
         addCategory.setOnClickListener(v -> {
             Intent intent = new Intent(categories.this, addcategory.class);
@@ -61,6 +63,7 @@ public class categories extends AppCompatActivity {
                                 i.putExtra("CATEGORY_ID", document.getId()); // Pass the category ID
                                 startActivity(i);
                             });
+
 
 
                             // Add the button to the container

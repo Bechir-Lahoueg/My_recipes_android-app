@@ -17,6 +17,7 @@
       <SelectionState runConfigName="getstarted">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+
     </selectionStates>
   </component>
 </project>
