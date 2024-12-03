@@ -6,21 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".categories"
-    android:background="@color/orange"
-
-    >
-
-
-    <Button
-        android:id="@+id/addCategory"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="516dp"
-        android:backgroundTint="#757060"
-        android:text="add category "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    android:background="@color/orange">
 
     <TextView
         android:id="@+id/textView4"
@@ -36,15 +22,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Container for dynamically added buttons -->
     <Button
-        android:id="@+id/button"
-        android:layout_width="350dp"
+        android:id="@+id/addCategory"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="514dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#757060"
-        android:text="Breakfast"
+        android:text="Add Category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <LinearLayout
+        android:id="@+id/categoryContainer"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
