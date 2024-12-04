@@ -19,8 +19,8 @@
             android:name=".dinner"
             android:exported="false" />
         <activity
-            android:name=".lunch"
-            android:exported="false" />
+            android:name=".getstarted"
+            android:exported="true" />
         <activity
             android:name=".breakfast"
             android:exported="false" />

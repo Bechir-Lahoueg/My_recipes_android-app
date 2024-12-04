@@ -33,15 +33,23 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.firestore)
+
+    // Firebase Storage dependency
+    implementation("com.google.firebase:firebase-storage") // Correct Firebase Storage
+
+    // Firebase BOM for version management
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+
+    // Firestore dependency, as part of Firebase BOM
+    implementation("com.google.firebase:firebase-firestore")
+
+    // Test dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
-    implementation("com.google.firebase:firebase-firestore")
 }
